@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kő, papír, olló feladat</title>
+    <style>
+        body {
+            font-family: cursive, sans-serif;
+            text-align: center;
+            background-image: url("background.png");
+        }
+
+        #game-container {
+            margin-top: 50px;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+        }
+
+        #result {
+            font-size: large;
+        }
+
+        #game-buttons {
+            margin-top: 20px;
+            float: left;
+            align-items: center;
+        }
+
+            #game-buttons button {
+                background-color: transparent;
+                color:  #ffffff ;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                margin: 5px;
+                justify-content: center;
+            }
+
+                #game-buttons button:hover {
+                    background-color:  #48c9b0;
+                }
+
+        #stats {
+            float: left;
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kő, papír, olló</h1>
+    <div id="game-container">
+        <div id="stats">
+            <h2>Statisztika</h2>
+            <p>Győzelem: <span id="win">0</span></p>
+            <p>Vereség: <span id="loss">0</span></p>
+            <p>Döntetlen: <span id="draw">0</span></p>
+        </div>
+        <div id="game-buttons">
+            <button id="rock"><img src="pet-rock.jpg"></button>
+            <button id="paper"><img src="paperplane.jpg"></button>
+            <button id="scissors"><img src="sovenyvago.png"></button>
+        </div>
+    </div>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
